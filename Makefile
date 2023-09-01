@@ -6,6 +6,9 @@ start:
 wsgi_start:
 	poetry run gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
 
+# activate env:
+# . vllm_inference_env/bin/activate
+
 make_env:
 	python3 -m venv vllm_inference_env
 
