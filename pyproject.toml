@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "vllm-inference"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.101.1"}
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+pydantic = "^2.2.0"
+numpy = "^1.25.2"
+vllm = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
